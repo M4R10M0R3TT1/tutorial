@@ -31,8 +31,7 @@ public class PersonEditDialogController {
 
     private Stage dialogStage;
     private Person person;
-    @FXML
-    private boolean okButton = false;
+    private boolean okClicked = false;
 
     /**
      * Initializes the controller class. This method is automatically called
@@ -73,8 +72,8 @@ public class PersonEditDialogController {
      *
      * @return
      */
-    public boolean isOkButton() {
-        return okButton;
+    public boolean isOkClicked() {
+        return okClicked;
     }
 
     /**
@@ -90,7 +89,7 @@ public class PersonEditDialogController {
             person.setCity(cityField.getText());
             person.setBirthday(DateUtil.parse(birthdayField.getText()));
 
-            okButton = true;
+            okClicked = true;
             dialogStage.close();
         }
     }

@@ -70,8 +70,8 @@
       </SplitPane>
       <ButtonBar layoutX="289.0" layoutY="273.0" prefHeight="25.0" prefWidth="305.0">
         <buttons>
-          <Button mnemonicParsing="false" text="NEW" />
-            <Button fx:id="editButton" mnemonicParsing="false" onAction="#handleEditPerson" text="EDIT" />
+          <Button mnemonicParsing="false" onAction="#handleNewPerson" text="NEW" />
+            <Button mnemonicParsing="false" onAction="#handleEditPerson" text="EDIT" />
             <Button mnemonicParsing="false" onAction="#handleDeletePerson" text="DELETE" />
         </buttons>
       </ButtonBar>
