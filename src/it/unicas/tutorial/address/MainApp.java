@@ -3,6 +3,7 @@ package it.unicas.tutorial.address;
 import java.io.IOException;
 
 import it.unicas.tutorial.address.model.Person;
+
 import it.unicas.tutorial.address.view.PersonEditDialogController;
 import it.unicas.tutorial.address.view.PersonOverviewController;
 import javafx.application.Application;
@@ -70,6 +71,14 @@ public class MainApp extends Application {
         }
     }
 
+    /**
+     * Opens a dialog to edit details for the specified person. If the user
+     * clicks OK, the changes are saved into the provided person object and true
+     * is returned.
+     *
+     * @param person the person object to be edited
+     * @return true if the user clicked OK, false otherwise.
+     */
     /**
      * Opens a dialog to edit details for the specified person. If the user
      * clicks OK, the changes are saved into the provided person object and true

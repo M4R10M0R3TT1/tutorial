@@ -1,17 +1,14 @@
 package it.unicas.tutorial.address.view;
 
 import it.unicas.tutorial.address.model.Person;
+import it.unicas.tutorial.address.util.DateUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import it.unicas.tutorial.address.util.DateUtil;
 
 /**
- * Dialog to edit details of a person.
- *
- * @author Marco Jakob
+ * Created by Antonio on 18/11/2017.
  */
 public class PersonEditDialogController {
 
@@ -27,7 +24,6 @@ public class PersonEditDialogController {
     private TextField cityField;
     @FXML
     private TextField birthdayField;
-
 
     private Stage dialogStage;
     private Person person;
@@ -147,7 +143,7 @@ public class PersonEditDialogController {
             return true;
         } else {
             // Show the error message.
-            Alert alert = new Alert(AlertType.ERROR);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.initOwner(dialogStage);
             alert.setTitle("Invalid Fields");
             alert.setHeaderText("Please correct invalid fields");
@@ -158,4 +154,5 @@ public class PersonEditDialogController {
             return false;
         }
     }
+
 }
