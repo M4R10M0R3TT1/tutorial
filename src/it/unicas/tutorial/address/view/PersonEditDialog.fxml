@@ -9,13 +9,12 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicas.tutorial.address.view.PersonEditDialogController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="350.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicas.tutorial.address.view.PersonEditDialogController">
    <children>
-      <ButtonBar layoutX="136.0" layoutY="206.0" prefHeight="40.0" prefWidth="200.0">
+      <ButtonBar layoutX="116.0" layoutY="206.0" prefHeight="40.0" prefWidth="220.0">
         <buttons>
           <Button mnemonicParsing="false" onAction="#handleOk" text="OK" />
-            <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+            <Button minWidth="66.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="33.0" prefWidth="104.0" text="Cancel" />
         </buttons>
       </ButtonBar>
       <GridPane prefHeight="180.0" prefWidth="490.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="15.0">
